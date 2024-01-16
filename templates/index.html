@@ -11,14 +11,19 @@
         }
 
         .container {
+            max-width: 600px;
             margin-top: 50px;
         }
 
-        h1, h2 {
+        h1, h2, h3 {
             color: #007bff;
         }
 
         form {
+            margin-bottom: 20px;
+        }
+
+        .outer-box {
             margin-bottom: 20px;
         }
 
@@ -33,46 +38,55 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box">
-            <h1 class="text-center">SISTEM PAKAR PAKAN IKAN</h1>
-            <form method="POST">
-                <div class="mb-3">
-                    <label for="jenis_ikan" class="form-label">Silahkan Pilih Jenis Ikan</label>
-                    <select class="form-select" name="jenis_ikan" id="jenis_ikan">
-                        <option selected disabled>Pilih Jenis Ikan</option>
-                        <option value="lele">Lele</option>
-                        <option value="gurame">Gurame</option>
-                        <option value="nila">Nila</option>
-                        <option value="mas">Mas</option>
-                        <option value="patin">Patin</option>
-                        <option value="bawal">Bawal</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="umur_ikan" class="form-label">Silahkan Pilih Umur Ikan</label>
-                    <select class="form-select" name="umur_ikan" id="umur_ikan">
-                        <option selected disabled>Pilih Umur Ikan</option>
-                        <option value="burayak">Burayak</option>
-                        <option value="juvenile">Juvenile</option>
-                        <option value="dewasa">Dewasa</option>
-                        <option value="tua">Tua</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </div>
-
-        <div class="box">
-            <h2 class="text-center">Rule Yang Digunakan</h2>
-            <p class="text-center">{{ rule }}</p>
-        </div>
-
-        <div class="box">
-            <h2 class="text-center">Output Hasil Pakan Yang Tepat Bagi Ikan</h2>
-            <p class="text-center">{{ pakan_ikan }}</p>
-        </div>
+  <div class="container">
+    <div class="outer-box">
+      <div class="box">
+        <h1 class="text-center">SISTEM PAKAR PAKAN IKAN</h1>
+        <div class="container">
+          <div class="outer-box">
+              <div class="box">
+                  <h2 class="text-center" style="margin-bottom: 50px;">KONSULTASI</h2>
+                  <form method="POST">
+                      <div class="mb-3">
+                          <label for="jenis_ikan" class="form-label">Silahkan Pilih Jenis Ikan</label>
+                          <select class="form-select" name="jenis_ikan" id="jenis_ikan">
+                              <option selected disabled>Pilih Jenis Ikan</option>
+                              <option value="lele">Lele</option>
+                              <option value="gurame">Gurame</option>
+                              <option value="nila">Nila</option>
+                              <option value="mas">Mas</option>
+                              <option value="patin">Patin</option>
+                              <option value="bawal">Bawal</option>
+                          </select>
+                      </div>
+                      <div class="mb-3">
+                          <label for="umur_ikan" class="form-label">Silahkan Pilih Umur Ikan</label>
+                          <select class="form-select" name="umur_ikan" id="umur_ikan">
+                              <option selected disabled>Pilih Umur Ikan</option>
+                              <option value="burayak">Burayak</option>
+                              <option value="juvenile">Juvenile</option>
+                              <option value="dewasa">Dewasa</option>
+                              <option value="tua">Tua</option>
+                          </select>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+              </div>
+  
+              <div class="box">
+                  <h3 class="text-center">RULE YANG DIGUNAKAN</h3>
+                  <p class="text-center">{{ rule }}</p>
+              </div>
+  
+              <div class="box">
+                  <h3 class="text-center">HASIL PAKAN YANG TEPAT BAGI IKAN</h3>
+                  <p class="text-center">{{ pakan_ikan }}</p>
+              </div>
+          </div>
+      </div>
+      </div>
     </div>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
