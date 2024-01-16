@@ -5,18 +5,26 @@ app = Flask(__name__)
 
 # Fakta-fakta
 jenis_ikan = ["lele", "gurame", "nila", "mas", "patin", "bawal"]
-umur_ikan = ["burayak", "juvenile", "dewasa", "tua"]
+umur_ikan = ["burayak (0-5 hari)", "juvenile (6-15 hari)", "dewasa (16-30 hari)", "tua (31 hari ke atas)"]
 pakan_ikan = ["pelet", "cacing", "pur", "udang"]
 
 # Aturan-aturan
 aturan = {
-    "lele": {"burayak": "pelet", "juvenile": "pelet", "dewasa": "pelet", "tua": "pelet"},
-    "gurame": {"burayak": "cacing", "juvenile": "cacing", "dewasa": "pur", "tua": "pur"},
-    "nila": {"burayak": "pelet", "juvenile": "pelet", "dewasa": "pur", "tua": "pur"},
-    "mas": {"burayak": "pelet", "juvenile": "pelet", "dewasa": "pur", "tua": "pur"},
-    "patin": {"burayak": "pelet", "juvenile": "udang", "dewasa": "udang", "tua": "udang"},
-    "bawal": {"burayak": "pelet", "juvenile": "udang", "dewasa": "udang", "tua": "udang"}
+    "lele": {"burayak (0-5 hari)": "pelet", "juvenile (6-15 hari)": "pelet", "dewasa (16-30 hari)": "pelet", "tua (31 hari ke atas)": "pelet"},
+    "gurame": {"burayak (0-5 hari)": "cacing", "juvenile (6-15 hari)": "cacing", "dewasa (16-30 hari)": "pur", "tua (31 hari ke atas)": "pur"},
+    "nila": {"burayak (0-5 hari)": "pelet", "juvenile (6-15 hari)": "pelet", "dewasa (16-30 hari)": "pur", "tua (31 hari ke atas)": "pur"},
+    "mas": {"burayak (0-5 hari)": "pelet", "juvenile (6-15 hari)": "pelet", "dewasa (16-30 hari)": "pur", "tua (31 hari ke atas)": "pur"},
+    "patin": {"burayak (0-5 hari)": "pelet", "juvenile (6-15 hari)": "udang", "dewasa (16-30 hari)": "udang", "tua (31 hari ke atas)": "udang"},
+    "bawal": {"burayak (0-5 hari)": "pelet", "juvenile (6-15 hari)": "udang", "dewasa (16-30 hari)": "udang", "tua (31 hari ke atas)": "udang"},
+    "cupang": {"burayak (0-5 hari)": "kutu air", "juvenile (6-15 hari)": "kutu air", "dewasa (16-30 hari)": "kutu air", "tua (31 hari ke atas)": "kutu air"},
+    "guppy": {"burayak (0-5 hari)": "kutu air", "juvenile (6-15 hari)": "kutu air", "dewasa (16-30 hari)": "kutu air", "tua (31 hari ke atas)": "kutu air"},
+    "mujair": {"burayak (0-5 hari)": "pelet", "juvenile (6-15 hari)": "pelet", "dewasa (16-30 hari)": "pelet", "tua (31 hari ke atas)": "pelet"},
+    "tawes": {"burayak (0-5 hari)": "pelet", "juvenile (6-15 hari)": "pelet", "dewasa (16-30 hari)": "pelet", "tua (31 hari ke atas)": "pelet"},
+    "belanak": {"burayak (0-5 hari)": "pelet", "juvenile (6-15 hari)": "pelet", "dewasa (16-30 hari)": "pelet", "tua (31 hari ke atas)": "pelet"},
+    "sepat siam": {"burayak (0-5 hari)": "pelet", "juvenile (6-15 hari)": "pelet", "dewasa (16-30 hari)": "pelet", "tua (31 hari ke atas)": "pelet"},
+    "gabus": {"burayak (0-5 hari)": "pelet", "juvenile (6-15 hari)": "pelet", "dewasa (16-30 hari)": "pelet", "tua (31 hari ke atas)": "pelet"}
 }
+
 
 # Modul Mesin Inferensi
 
