@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sistem Pakar Pakan Ikan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        h1, h2 {
+            color: #007bff;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        .box {
+            background-color: #ffffff;
+            border: 1px solid #d4d4d4;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 class="text-center">SISTEM PAKAR PAKAN IKAN</h1>
+            <form method="POST">
+                <div class="mb-3">
+                    <label for="jenis_ikan" class="form-label">Silahkan Pilih Jenis Ikan</label>
+                    <select class="form-select" name="jenis_ikan" id="jenis_ikan">
+                        <option selected disabled>Pilih Jenis Ikan</option>
+                        <option value="lele">Lele</option>
+                        <option value="gurame">Gurame</option>
+                        <option value="nila">Nila</option>
+                        <option value="mas">Mas</option>
+                        <option value="patin">Patin</option>
+                        <option value="bawal">Bawal</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="umur_ikan" class="form-label">Silahkan Pilih Umur Ikan</label>
+                    <select class="form-select" name="umur_ikan" id="umur_ikan">
+                        <option selected disabled>Pilih Umur Ikan</option>
+                        <option value="burayak">Burayak</option>
+                        <option value="juvenile">Juvenile</option>
+                        <option value="dewasa">Dewasa</option>
+                        <option value="tua">Tua</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="box">
+            <h2 class="text-center">Rule Yang Digunakan</h2>
+            <p class="text-center">{{ rule }}</p>
+        </div>
+
+        <div class="box">
+            <h2 class="text-center">Output Hasil Pakan Yang Tepat Bagi Ikan</h2>
+            <p class="text-center">{{ pakan_ikan }}</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
