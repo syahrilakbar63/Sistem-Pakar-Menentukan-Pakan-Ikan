@@ -4,9 +4,9 @@ app = Flask(__name__)
 # Modul Basis Pengetahuan
 
 # Fakta-fakta
-jenis_ikan = ["lele", "gurame", "nila", "mas", "patin", "bawal"]
+jenis_ikan = ["lele", "gurame", "nila", "mas", "patin", "bawal", "cupang", "guppy", "mujair", "tawes", "belanak", "sepat siam", "gabus"]
 umur_ikan = ["burayak (0-5 hari)", "juvenile (6-15 hari)", "dewasa (16-30 hari)", "tua (31 hari ke atas)"]
-pakan_ikan = ["pelet", "cacing", "pur", "udang"]
+pakan_ikan = ["pelet", "cacing", "pur", "udang", "kutu air"]
 
 # Aturan-aturan
 aturan = {
