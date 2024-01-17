@@ -17,19 +17,21 @@ Proyek ini adalah implementasi Sistem Pakar Pakan Ikan menggunakan metode backwa
 
 ## Penggunaan
 
-1. Install dependencies:
+1. Pastikan Python sudah terinstall di sistem Anda. Jika belum, Anda dapat mengunduh dan menginstalnya dari [python.org](https://www.python.org/downloads/).
+
+2. Install dependencies:
 
    ```bash
    pip install flask
    ```
 
-2. Jalankan aplikasi:
+3. Jalankan aplikasi:
 
    ```bash
    python app.py
    ```
 
-3. Buka browser dan akses [http://localhost:5000/](http://localhost:5000/)
+4. Buka browser dan akses [http://localhost:5000/](http://localhost:5000/)
 
 ## Struktur HTML (index.html)
 
