@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sistem Pakar Pakan Ikan</title>
+    <!-- Mengimpor stylesheet Bootstrap dari CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
+        /* Gaya CSS khusus untuk halaman */
         body {
             background-color: #f8f9fa;
             font-family: 'Roboto', sans-serif;
@@ -48,17 +50,22 @@
 <body>
   <div class="container">
     <div class="outer-box">
+      <!-- Kotak Utama -->
       <div class="box">
         <h1 class="text-center">SISTEM PAKAR PAKAN IKAN</h1>
+        <!-- Kotak lapis kedua -->
         <div class="container">
           <div class="outer-box">
+              <!-- Kotak pertama untuk formulir konsultasi -->
               <div class="box">
                   <h2 class="text-center" style="margin-bottom: 50px;">KONSULTASI</h2>
+                  <!-- Formulir Konsultasi -->
                   <form method="POST">
                       <div class="mb-3">
                           <label for="jenis_ikan" class="form-label">Silahkan Pilih Jenis Ikan</label>
                           <select class="form-select" name="jenis_ikan" id="jenis_ikan">
                               <option selected disabled>Pilih Jenis Ikan</option>
+                              <!-- Pilihan Jenis Ikan -->
                               <option value="lele">Lele</option>
                               <option value="gurame">Gurame</option>
                               <option value="nila">Nila</option>
@@ -78,6 +85,9 @@
                           <label for="umur_ikan" class="form-label">Silahkan Pilih Umur Ikan</label>
                           <select class="form-select" name="umur_ikan" id="umur_ikan">
                               <option selected disabled>Pilih Umur Ikan</option>
+                              <!-- Pilihan Umur Ikan -->
+                              <option value="burayak (0-5 hari)">Burayak (0-5 hari)</option>
+                              <option value="juvenile (6-15 hari)">Juvenile (6-15 hari)</option>
                               <option value="burayak (0-5 hari)">Burayak (0-5 hari)</option>
                               <option value="juvenile (6-15 hari)">Juvenile (6-15 hari)</option>
                               <option value="dewasa (16-30 hari)">Dewasa (16-30 hari)</option>
@@ -88,13 +98,17 @@
                   </form>
               </div>
   
+              <!-- Kotak kedua untuk menampilkan rule -->
               <div class="box">
                   <h3 class="text-center">RULE YANG DIGUNAKAN</h3>
+                  <!-- Menampilkan rule -->
                   <p class="text-center">{{ rule }}</p>
               </div>
   
+              <!-- Kotak ketiga untuk menampilkan hasil pakan ikan -->
               <div class="box">
                   <h3 class="text-center">HASIL PAKAN YANG TEPAT BAGI IKAN</h3>
+                  <!-- Menampilkan hasil pakan ikan -->
                   <p class="text-center">{{ pakan_ikan }}</p>
               </div>
           </div>
@@ -102,6 +116,7 @@
       </div>
     </div>
   </div>
+    <!-- Mengimpor script Bootstrap dari CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
