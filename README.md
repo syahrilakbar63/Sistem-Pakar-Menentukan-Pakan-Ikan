@@ -1,19 +1,57 @@
 # Sistem Pakar Pakan Ikan
 
-Ini adalah proyek Sistem Pakar Pakan Ikan menggunakan Flask.
+Ini adalah project Sistem Pakar Pakan Ikan menggunakan Flask.
 
-## Struktur Proyek
+## Struktur Project
 
 ```
-myProject
-├── templates
-│   └── index.html
-└── app.py
+MyProject
+├── __pycache__
+│   └── app.cpython-310.pyc
+├── .devcontainer
+│   └── devcontainer.json
+├── .github/workflows
+│   ├── jekyll-gh-pages.yml
+│   ├── python-publish.yml
+│   └── static.yml
+├── static 
+├── templates 
+│   └── main.css 
+├── index.html 
+├── app.py 
+├── .gitignore.txt 
+├── LICENSE 
+├── README.md 
+└── requirements.txt  
 ```
 
 ## Deskripsi
 
-Proyek ini adalah implementasi Sistem Pakar Pakan Ikan menggunakan metode backward chaining. Proyek menggunakan Flask sebagai framework web untuk menyajikan antarmuka pengguna.
+Project ini adalah implementasi Sistem Pakar Pakan Ikan menggunakan metode backward chaining. Project menggunakan Flask sebagai framework web untuk menyajikan antarmuka pengguna.
+
+## Modul Basis Pengetahuan
+
+File `app.py` mengandung modul basis pengetahuan yang berisi fakta-fakta tentang jenis ikan, umur ikan, dan jenis pakan ikan. Selain itu, terdapat aturan-aturan yang digunakan untuk menentukan pakan ikan berdasarkan jenis dan umur ikan.
+
+- Fakta-fakta: Jenis ikan, umur ikan, dan jenis pakan ikan.
+- Aturan-aturan: Aturan inferensi berdasarkan jenis dan umur ikan.
+
+## Modul Mesin Inferensi
+
+Modul mesin inferensi terdapat pada fungsi `backward_chaining` di dalam file `app.py`. Fungsi ini digunakan untuk menentukan pakan ikan berdasarkan aturan yang telah ditentukan.
+
+## Antarmuka Pengguna
+
+Antarmuka pengguna terdapat pada file `index.html`, dan project ini menggunakan Bootstrap untuk tata letak dan gaya. Formulir konsultasi memungkinkan pengguna memilih jenis dan umur ikan, dan hasilnya akan menampilkan rule yang digunakan serta pakan ikan yang tepat.
+
+## Pengembangan menggunakan DevContainer
+
+Project ini dapat dikembangkan menggunakan Docker dan DevContainer. File `devcontainer.json` mengandung konfigurasi untuk lingkungan pengembangan Docker, termasuk spesifikasi CPU dan pengaturan port.
+
+## Endpoints
+
+- **GET /**: Halaman utama untuk konsultasi.
+- **POST /**: Menangani formulir konsultasi dan menampilkan hasil.
 
 ## Penggunaan
 
@@ -33,27 +71,7 @@ Proyek ini adalah implementasi Sistem Pakar Pakan Ikan menggunakan metode backwa
 
 4. Buka browser dan akses [http://localhost:5000/](http://localhost:5000/)
 
-## Struktur HTML (index.html)
-
-File `index.html` berisi antarmuka pengguna untuk melakukan konsultasi terkait pilihan jenis dan umur ikan.
-
-## Struktur Python (app.py)
-
-File `app.py` berisi implementasi Flask dan mesin inferensi backward chaining untuk menentukan pakan ikan yang tepat.
-
-## Modul Basis Pengetahuan
-
-- Fakta-fakta: Jenis ikan, umur ikan, dan jenis pakan ikan.
-- Aturan-aturan: Aturan inferensi berdasarkan jenis dan umur ikan.
-
-## Modul Mesin Inferensi
-
-Fungsi `backward_chaining` digunakan untuk menentukan pakan ikan berdasarkan jenis dan umur ikan.
-
-## Endpoints
-
-- **GET /**: Halaman utama untuk konsultasi.
-- **POST /**: Menangani formulir konsultasi dan menampilkan hasil.
+5. Untuk menghentikan aplikasi, tekan `Ctrl+C` di terminal.
 
 ## Lisensi
 
