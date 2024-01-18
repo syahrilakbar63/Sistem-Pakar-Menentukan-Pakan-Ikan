@@ -1,6 +1,6 @@
 # Sistem Pakar Pakan Ikan
 
-Ini adalah project Sistem Pakar Pakan Ikan menggunakan Flask.
+Ini adalah project Sistem pakar untuk menentukan pakan yang tepat bagi ikan berdasarkan jenis dan umur ikan menggunakan Flask. Sistem ini dapat membantu praktisi budidaya ikan dalam menentukan pakan yang tepat bagi ikan berdasarkan jenis dan umur ikan. Sistem ini menggunakan metode backward chaining
 
 ## Struktur Project
 
