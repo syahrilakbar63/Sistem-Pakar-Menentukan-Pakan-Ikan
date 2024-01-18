@@ -10,19 +10,15 @@ MyProject
 │   └── app.cpython-310.pyc
 ├── .devcontainer
 │   └── devcontainer.json
-├── .github/workflows
-│   ├── jekyll-gh-pages.yml
-│   ├── python-publish.yml
-│   └── static.yml
-├── static 
-├── templates 
-│   └── main.css 
-├── index.html 
+├── static
+│   └── main.css
+├── templates
+│   └── index.html
+├── .gitignore.txt
 ├── app.py 
-├── .gitignore.txt 
 ├── LICENSE 
 ├── README.md 
-└── requirements.txt  
+└─ requirements.txt 
 ```
 
 ## Deskripsi
